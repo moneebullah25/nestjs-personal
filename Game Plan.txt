@@ -59,3 +59,4 @@ GitHub Implementation: https://github.com/moneebullah25/nestjs-prisma-starter.gi
 RnD
 GitHub: https://github.com/notiz-dev/nestjs-prisma-starter.git
 GitHub: https://github.com/nestjs/awesome-nestjs.git
+Utility Types TS: https://www.typescriptlang.org/docs/handbook/utility-types.html
