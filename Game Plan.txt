@@ -55,8 +55,12 @@ GitHub Implementation: https://github.com/moneebullah25/sleepr.git
 NestJS GraphQL Prisma Auth Starter
 GitHub Implementation: https://github.com/moneebullah25/nestjs-prisma-starter.git
 
+15. Ongoing
+Full Stack like a Pro Dmitrii: https://www.youtube.com/playlist?list=PLETonAtE1SbvrZD7s2dcUDTtSFrMeShcP
+GitHub Implementation: https://github.com/moneebullah25/okkino.git
 
 RnD
 GitHub: https://github.com/notiz-dev/nestjs-prisma-starter.git
 GitHub: https://github.com/nestjs/awesome-nestjs.git
 Utility Types TS: https://www.typescriptlang.org/docs/handbook/utility-types.html
+TypeORM: https://typeorm.io/#step-by-step-guide
