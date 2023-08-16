@@ -73,7 +73,7 @@ export class CatsService {
 ```
 Then we request that Nest inject the provider into our controller class:
 
-cats.controller.tsJS
+cats.controller.ts
 ```typescript
 import { Controller, Get } from '@nestjs/common';
 import { CatsService } from './cats.service';
@@ -91,7 +91,7 @@ export class CatsController {
 ```
 Finally, we register the provider with the Nest IoC container:
 
-app.module.tsJS
+app.module.ts
 ```typescript
 import { Module } from '@nestjs/common';
 import { CatsController } from './cats/cats.controller';
@@ -158,8 +158,14 @@ For e2e testing file extension **_e2e-spec.ts_**. The end-to-end system tests th
 ## .spec.ts
 
 ```typescript
+import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { CoffeesService } from '../services/coffees.service';
+import { getRepositoryToken } from '@nestjs/typeorm';
+import { CoffeesService } from 'src/coffees/coffees.service';
+import { Coffee } from 'src/coffees/entities/coffee.entity';
+import { Flavor } from 'src/coffees/entities/flavor.entity';
+import { Connection, Repository } from 'typeorm';
+
 
 type MockRepository<T = any> = Partial<Record<keyof Repository<T>, jest.Mock>>;
 const createMockRepository = <T = any>(): MockRepository<T> => ({
