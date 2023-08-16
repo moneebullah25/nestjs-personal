@@ -1,0 +1,61 @@
+1. Done
+Design Pattern Playlist: https://www.youtube.com/playlist?list=PL6n9fhu94yhUbctIoxoVTrklN3LMwTCmd
+GitHub Implementation: https://github.com/moneebullah25/design-pattern-course.git
+
+2. Done
+Design Pattern React Playlist: https://www.youtube.com/playlist?list=PLgeETUaEEds5HE2uGWezJxYeZwpBonHr-
+GitHub Implementation: https://github.com/moneebullah25/react-design-patterns.git
+
+3. Done
+Node.js and Express.js - Full Course: https://youtu.be/Oe421EPjeBE
+GitHub Implementation: https://github.com/moneebullah25/node-express-course.git
+
+4. Done
+Nest JS Backend API | Full Developer Course By Voxmind: https://youtu.be/KkKiSN_yzdI
+GitHub Implementation: https://github.com/harblaith7/NestJS-Udemy-Course.git
+
+5. Done
+Official NestJS Fundamentals Course: https://www.psdly.com/nestjs-fundamentals-course
+GitHub Implementation: https://github.com/moneebullah25/NestJS-Fundamentals-Course.git
+
+6. Ongoing
+Auth System using NestJS, GraphQL, Postgres, Prisma: https://www.youtube.com/playlist?list=PLl6yY6TinjfJLm3fh796ReTcsOEt0p-5t
+GitHub Implementation: https://github.com/moneebullah25/nestjs_graphql_prisma_auth.git
+
+7. Done
+NestJS Crash Course tkssharma: https://www.youtube.com/playlist?list=PLIGDNOJWiL1_Nt0qLMaYVvcTxaTioCuRg
+GitHub Implementation: https://github.com/moneebullah25/nestjs-crash-course.git
+
+8. Done
+Build a Scalable GraphQL Server With Nest.js + Typescript: https://youtu.be/0WgO3-HVH94
+GitHub Implementation: https://github.com/moneebullah25/nestjs-graphql-auth.git
+
+9. Done
+NestJS JWT - Access Tokens & Refresh Tokens: https://youtu.be/uAKzFhE3rxU
+GitHub Implementation: https://github.com/moneebullah25/nestjs-jwts-vlad.git
+
+10. Done
+NestJS Websockets Tutorials Anson: https://youtu.be/iObzX8-Y5xg, https://youtu.be/px0jGn2Bayw
+GitHub Implementation: https://github.com/moneebullah25/nestjs-socket-consumer-example.git
+		       https://github.com/moneebullah25/nestjs-websocket-gateway-example.git
+
+11. Ongoing
+NestJS + TypeORM | Repositories, Relations, Migrations: https://youtu.be/9MGKKJTwicM
+GitHub Implementation: https://github.com/moneebullah25/nestjs-typeorm.git
+
+12. Ongoing
+Node JS Microservices Graphql Based APIs: https://www.youtube.com/playlist?list=PLIGDNOJWiL1918oR1DYgeOEe0cWwuDPCm
+GitHub Implementation: https://github.com/moneebullah25/nestjs-with-apollo-federation-gateway.git
+
+13. Ongoing
+Scaleable Backend: https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/
+GitHub Implementation: https://github.com/moneebullah25/sleepr.git
+
+14. Ongoing
+NestJS GraphQL Prisma Auth Starter
+GitHub Implementation: https://github.com/moneebullah25/nestjs-prisma-starter.git
+
+
+RnD
+GitHub: https://github.com/notiz-dev/nestjs-prisma-starter.git
+GitHub: https://github.com/nestjs/awesome-nestjs.git
