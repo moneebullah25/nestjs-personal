@@ -12,13 +12,13 @@ GitHub Implementation: https://github.com/moneebullah25/node-express-course.git
 
 4. Done
 Nest JS Backend API | Full Developer Course By Voxmind: https://youtu.be/KkKiSN_yzdI
-GitHub Implementation: https://github.com/harblaith7/NestJS-Udemy-Course.git
+GitHub Implementation: https://github.com/moneebullah25/NestJS-Udemy-Course.git
 
 5. Done
 Official NestJS Fundamentals Course: https://www.psdly.com/nestjs-fundamentals-course
 GitHub Implementation: https://github.com/moneebullah25/NestJS-Fundamentals-Course.git
 
-6. Ongoing
+6. Done
 Auth System using NestJS, GraphQL, Postgres, Prisma: https://www.youtube.com/playlist?list=PLl6yY6TinjfJLm3fh796ReTcsOEt0p-5t
 GitHub Implementation: https://github.com/moneebullah25/nestjs_graphql_prisma_auth.git
 
