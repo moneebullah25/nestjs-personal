@@ -113,13 +113,6 @@ What exactly is happening under the covers to make this work? There are three ke
 ---
 
 
-
-
-
-
-
-
-
 # Websockets
 ### Gateways
 Most of the concepts discussed elsewhere in this documentation, such as dependency injection, decorators, exception filters, pipes, guards and interceptors, apply equally to gateways.
@@ -156,6 +149,8 @@ For end-to-end testing we put the test directory in side of src directory.
 For e2e testing file extension **_e2e-spec.ts_**. The end-to-end system tests the higher level features such as user interaction with the application
 
 ## .spec.ts
+
+TypeORM Testing
 
 ```typescript
 import { NotFoundException } from '@nestjs/common';
@@ -255,6 +250,74 @@ describe('CoffeesService', () => {
     });
   });
 });
+```
+
+PrismaORM Testing
+
+```typescript
+import { NotFoundException } from '@nestjs/common';
+import { Test, TestingModule } from '@nestjs/testing';
+import { PrismaService } from '../prisma/prisma.service';
+import { CoffeesService } from './coffees.service';
+import { Coffee } from './entities/coffee.entity';
+
+describe('CoffeesService', () => {
+  let service: CoffeesService;
+  let prismaService: PrismaService;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        CoffeesService,
+        {
+          provide: PrismaService,
+          useValue: {
+            coffee: {
+              findUnique: jest.fn(),
+            },
+          },
+        },
+      ],
+    }).compile();
+
+    service = module.get<CoffeesService>(CoffeesService);
+    prismaService = module.get<PrismaService>(PrismaService);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeDefined();
+  });
+
+  describe('findOne', () => {
+    describe('when coffee with ID exists', () => {
+      it('should return the coffee object', async () => {
+        const coffeeId = '1';
+        const expectedCoffee = {};
+
+        prismaService.coffee.findUnique.mockReturnValue(expectedCoffee);
+
+        const coffee = await service.findOne(coffeeId);
+        expect(coffee).toEqual(expectedCoffee);
+      });
+    });
+
+    describe('otherwise', () => {
+      it('should throw the "NotFoundException"', async () => {
+        const coffeeId = '1';
+
+        prismaService.coffee.findUnique.mockReturnValue(undefined);
+
+        try {
+          await service.findOne(coffeeId);
+        } catch (err) {
+          expect(err).toBeInstanceOf(NotFoundException);
+          expect(err.message).toEqual(`Coffee #${coffeeId} not found`);
+        }
+      });
+    });
+  });
+});
+
 ```
 
 ## CLI Commands
