@@ -64,3 +64,6 @@ GitHub: https://github.com/notiz-dev/nestjs-prisma-starter.git
 GitHub: https://github.com/nestjs/awesome-nestjs.git
 Utility Types TS: https://www.typescriptlang.org/docs/handbook/utility-types.html
 TypeORM: https://typeorm.io/#step-by-step-guide
+
+Kubernetes:
+https://new7.gdtot.cfd/file/4127463571579
