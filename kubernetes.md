@@ -309,3 +309,17 @@ Print the DBCON environment variable that was set in the YAML file.
 
     kubectl delete -f myapp.yaml
 
+# Init Containers
+
+If our application has dependencies on other compoenets like database, api, or files etc. We would use init containers to initialize the pod before an application container runs. Init containers make sure that the dependencies are initalized before the main logic container.
+
+![Alt text](image-23.png)
+
+Always run to completion. Each init container must complete successfully before the next one starts. If it fails, the kubelet repeatedly restarts it until it succeeds
+* Unless it's `restartPolicy` is set to Never
+
+Probes are not supported
+* livenessProbe, readinessProbe, or startupProbe
+
+![Alt text](image-24.png)
+
